@@ -9,6 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
+        h1 {
+  font-size: 35px;
+  font-weight: 800;
+  background: linear-gradient(
+    270deg,
+    #0066ff,
+    #ff0000,
+    #ff9900,
+    #0066ff  /* تكرار اللون الأول لانتقال سلس */
+  );
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -27,7 +54,7 @@
             text-align: center;
         }
         img {
-            width: 500px; /* تحديد عرض الصورة */
+            width: 200px; /* تحديد عرض الصورة */
             height: auto;
             border-radius: 20px;
         }
@@ -50,3 +77,4 @@
 
 </body>
 </html>
+
